@@ -14,7 +14,7 @@ link_model = link_namespace.model('LinkShorten', {
     'name': fields.String(description="name alias", required=True)
 })
 link_march = link_namespace.model('LinkMac', {
-    'id': fields.Integer(decription='link identifier', required=True),
+    'id': fields.Integer(description='link identifier', required=True),
     'link': fields.String(description="url to shorten", required=True)
 })
 
@@ -28,7 +28,7 @@ class createShortenLink(Resource):
             Create shorten link
         '''
         data = request.get_json()
-        key = 'ed6b9642e21672c4626234620c1b3c72'
+        key = '3b92d637fffc0831d001291939e8df28a891a'
         url = data['url']
         name = data['name']
         
